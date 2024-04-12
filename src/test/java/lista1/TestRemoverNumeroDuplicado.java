@@ -13,11 +13,10 @@ public class TestRemoverNumeroDuplicado {
         List<Integer> resultadoEsperado = Arrays.asList(3, 4, 5, 2, 1);
         List<Integer> resultado = RemoverNumeroDuplicado.removerDuplicados(numeros);
 
-        numeros.removeAll(resultado);
-        System.out.println("Números retirados: " + numeros);
+        List<Integer> numerosRetiradosEsperados = Arrays.asList(3, 2);
+        List<Integer> numerosRetirados = RemoverNumeroDuplicado.encontrarDuplicados(numeros);
 
-        System.out.println("Números sem duplicação: " + resultado);
-
+        assertEquals(numerosRetiradosEsperados, numerosRetirados);
         assertEquals(resultadoEsperado, resultado);
 
 
