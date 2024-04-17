@@ -6,4 +6,7 @@ public class App {
     }
 
 
+    public static String[] calcularIdades(String[] entrada) {
+        return new String[0];
+    }
 }
